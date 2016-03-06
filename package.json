@@ -1,0 +1,29 @@
+{
+  "name": "smile",
+  "version": "1.0.0",
+  "description": "Quick start application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Quick",
+    "start",
+    "product"
+  ],
+  "author": "Samar Panda <er.samarpanda@gmail.com> (http://samarpanda.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0"
+  }
+}
