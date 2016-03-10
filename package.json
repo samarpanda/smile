@@ -4,7 +4,7 @@
   "description": "Quick start application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register --recursive test",
     "start": "babel-node app/server.js",
     "deploy": "NODE_ENV=production webpack -p",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
