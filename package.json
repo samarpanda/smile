@@ -21,6 +21,7 @@
   "author": "Samar Panda <er.samarpanda@gmail.com> (http://samarpanda.com)",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.6.5",
     "babel-core": "^6.7.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-react-jsx": "^6.6.5",
@@ -32,6 +33,7 @@
     "html-webpack-plugin": "^2.9.0",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
