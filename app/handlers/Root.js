@@ -2,6 +2,10 @@ import React from 'react';
 
 var App = module.exports = React.createClass({
   getInitialState(){
+    // var items = this.props.routes[0].childRoutes;
+    // var links = items.map((item) => {
+    //   console.log(item.name, item.path);
+    // });
     return {page: 'Root'};
   },
 

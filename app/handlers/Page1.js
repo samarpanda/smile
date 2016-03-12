@@ -1,6 +1,6 @@
 import React from 'react'
 
-var App = module.exports = React.createClass({
+var App = React.createClass({
   getInitialState(){
     return {page: 1};
   },
@@ -11,3 +11,5 @@ var App = module.exports = React.createClass({
     );
   }
 });
+
+export default App;

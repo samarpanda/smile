@@ -32,6 +32,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.9.0",
     "jsdom": "^8.1.0",
+    "material-ui": "^0.14.4",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.14",
@@ -39,7 +40,6 @@
   },
   "dependencies": {
     "history": "^2.0.1",
-    "material-ui": "^0.14.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
