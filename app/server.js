@@ -4,6 +4,7 @@ import { renderToString } from 'react-dom/server'
 import { match, RouterContext } from 'react-router'
 import fs from 'fs'
 import { createPage, write, writeError, writeNotFound, redirect } from './utils/server-utils'
+import mui from 'material-ui'
 import routes from './routes'
 
 const PORT = process.env.PORT || 5000
