@@ -1,8 +1,14 @@
 import React from 'react'
-import mui from 'material-ui'
+// import mui from 'material-ui'
 import { Link } from 'react-router'
+import Menu from 'material-ui/lib/menus//menu'
+import MenuItem from 'material-ui/lib/menus/menu-item'
 
-let LeftNav = mui.LeftNav
+const styleMenu = {};
+const styleItem = {
+  display: 'inline-block',
+  float: 'left'
+};
 
 var App = React.createClass({
   getInitialState(){
@@ -12,12 +18,12 @@ var App = React.createClass({
     let { navItems } = this.props;
     return (
       <div>
-        <ul>
-        <li key="home"><Link to="/">Home</Link></li>
-        {navItems.map( item => {
-          return <li key={item.path}><Link to={item.path}>{item.name}</Link></li>
-        })}
-        </ul>
+        <Menu style={styleMenu}>
+          <MenuItem style={styleItem}><Link to="/">Home</Link></MenuItem>
+          {navItems.map( item => {
+          return <MenuItem style={styleItem} key={item.path}><Link to={item.path}>{item.name}</Link></MenuItem>
+          })}
+        </Menu>
       </div>
     );
   }
