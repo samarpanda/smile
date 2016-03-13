@@ -13,14 +13,19 @@ function webPath(dest){
 
 const config = {
   entry: [
+    webPath('scss/style.scss'),
     webPath('client.js')
   ],
   output: {
-    path: process.env.NODE_ENV === 'production' ? dirPath('dist') : dirPath('__build__'),
+    path: process.env.NODE_ENV === 'production' ? dirPath('dist') : dirPath('build'),
     filename: 'js/bundle.js'
   },
   module: {
     loaders: [{
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract('style', 'css!sass')
+    },
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel',
@@ -30,6 +35,7 @@ const config = {
     }]
   },
   plugins: [
+    new ExtractTextPlugin('css/style.css'),
     new HtmlWebpackPlugin({
       template: webPath('index.html'),
       inject: 'body'
