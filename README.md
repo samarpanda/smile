@@ -1,4 +1,4 @@
-## Quick start product
+## Smile React Setup [![Build Status](https://travis-ci.org/samarpanda/smile.svg?branch=master)](https://travis-ci.org/samarpanda/smile)
 
 Quick setup to start a project. Using react, react-router, material-ui, jsdom and mocha.
 
