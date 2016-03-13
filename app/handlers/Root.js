@@ -1,21 +1,27 @@
-import React from 'react';
+import React from 'react'
+import Header from './../partials/header'
+import Footer from './../partials/footer'
 
 var App = module.exports = React.createClass({
   getInitialState(){
-    // var items = this.props.routes[0].childRoutes;
-    // var links = items.map((item) => {
-    //   console.log(item.name, item.path);
-    // });
     return {page: 'Root'};
+  },
+
+  /**
+  * TODD: Module to get routes
+  */
+  getChildRoutes(){
+    var routes = this.props.routes[0].childRoutes;
+    return routes;
   },
 
   render(){
     return (
     <div>
-    <div>Header Block</div>
-    {this.props.children}
-    <div>Footer Block</div>
-  </div>
+      <Header navItems={this.getChildRoutes()} />
+      { this.props.children }
+      <Footer />
+    </div>
     );
   }
 });
