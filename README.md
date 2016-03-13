@@ -5,8 +5,9 @@ Quick setup to start a project. Using react, react-router, material-ui, jsdom an
 ## Quick commands
 
 1. Client side rendering with react hot loader dev environment `npm run dev`. Open browser `http://localhost:8080`
-1. Server side rendering `npm start`. Open browser `http://localhost:5000`
-2. Test `npm test`
+2. Server side rendering `npm start`. Open browser `http://localhost:5000`
+3. Test `npm test`
+4. Deploy `dist` to `gh-pages` => `git subtree push --prefix dist origin gh-pages`
 
 ## Demo
 
