@@ -7,7 +7,10 @@ var App = React.createClass({
 
   render(){
     return (
-      <div>Page {this.state.page}</div>
+      <div>
+      <h2>Page {this.state.page}</h2>
+      <p>Content lorem ipsum lorem ipsum</p>
+      </div>
     );
   }
 });
