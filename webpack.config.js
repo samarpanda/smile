@@ -32,6 +32,10 @@ const config = {
       query: {
         presets: ['es2015', 'react']
       }
+    },
+    {
+      test: /\.(png|jpg|jpeg|gif)$/,
+      loader: 'url-loader?limit=1000&name=images/img-[hash:6].[ext]'
     }]
   },
   plugins: [
