@@ -45,21 +45,16 @@ var App = React.createClass({
 
 		    <div className="mdl-mega-footer__drop-down-section">
 		      <input className="mdl-mega-footer__heading-checkbox" type="checkbox" checked/>
-		      <h1 className="mdl-mega-footer__heading">FAQ</h1>
-		      <ul className="mdl-mega-footer__link-list">
-		        <li><a href="#">Questions</a></li>
-		        <li><a href="#">Answers</a></li>
-		        <li><a href="#">Contact us</a></li>
-		      </ul>
+		      <h1 className="mdl-mega-footer__heading">ABOUT HURREH</h1>
+		      
 		    </div>
 
 		  </div>
 
 		  <div className="mdl-mega-footer__bottom-section">
-		    <div className="mdl-logo">Title</div>
+		    <div className="mdl-logo"><img src={require('./../images/logo-2.png')} /></div>
 		    <ul className="mdl-mega-footer__link-list">
-		      <li><a href="#">Help</a></li>
-		      <li><a href="#">Privacy & Terms</a></li>
+		      <li>@2016 Hurreh Technologies Pvt Ltd</li>
 		    </ul>
 		  </div>
 		</footer>

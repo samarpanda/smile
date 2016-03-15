@@ -23,7 +23,7 @@ var App = React.createClass({
         <header className="mdl-layout__header mdl-layout__header--transparent">
           <div className="mdl-layout__header-row">
            
-            <span className="mdl-layout-title">Hurreh.com</span>
+            <span className="mdl-layout-title"><img src={require('./../images/logo.png')} /></span>
           
             <div class="mdl-layout-spacer"></div>
             
@@ -36,7 +36,7 @@ var App = React.createClass({
           </div>
         </header>
         <div className="mdl-layout__drawer">
-          <span className="mdl-layout-title">Hurreh.com</span>
+          <span className="mdl-layout-title"><img src={require('./../images/logo-2.png')} /></span>
           <nav className="mdl-navigation">
              <a className="mdl-navigation__link" href="/how-it-works">HOW IT WORKS</a>
             <a className="mdl-navigation__link" href="">GIFT A WISH</a>
