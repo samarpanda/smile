@@ -10,6 +10,7 @@ var App = React.createClass({
       <div>
       <h2>Page {this.state.page}</h2>
       <p>Content lorem ipsum lorem ipsum</p>
+      <img src={require('./../images/0.jpg')} />
       </div>
     );
   }
