@@ -1,4 +1,5 @@
 import React from 'react'
+import RaisedButton from 'material-ui/lib/raised-button';
 
 var styles = {
   root :{
@@ -12,10 +13,10 @@ var styles = {
   overlay: {
     position: 'absolute', 
     top: '200px',
-    left: '0', 
-    width: '100%', 
-    color: '#fff',
-    margin: '10px 12px'
+    left: '20px', 
+   
+    backgroundColor: '#000',
+    color: '#fff'
   }
 }
 
@@ -26,25 +27,14 @@ var App = React.createClass({
 
   render(){
     return (
-      
-    
-
-      <div style={styles.root}>
-        <img style={styles.im} src={require('./../images/01_new.jpg')} />
-        <div style={styles.overlay}>
-          <h1 className="">GIFT A WISH</h1>
-          <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            Gift
-          </button>
+      <div>
+        <div style={styles.root}>
+          <img style={styles.im} src={require('./../images/01_new.jpg')} />
+          
         </div>
+        <RaisedButton label="Gift Now" secondary={true} style={styles.overlay}/>
       </div>
-
-
-
-
-
     );
   }
 });
-
 export default App;

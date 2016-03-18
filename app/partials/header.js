@@ -25,12 +25,12 @@ var App = React.createClass({
            
             <span className="mdl-layout-title"><img src={require('./../images/logo.png')} /></span>
           
-            <div class="mdl-layout-spacer"></div>
+            <div className="mdl-layout-spacer"></div>
             
             <nav className="mdl-navigation">
-              <a className="mdl-navigation__link" href="/how-it-works">HOW IT WORKS</a>
+              <a className="mdl-navigation__link" href="/#how-it-works">HOW IT WORKS</a>
               <a className="mdl-navigation__link" href="">GIFT A WISH</a>
-              <a className="mdl-navigation__link" href="">WISHLIST</a>
+              <a className="mdl-navigation__link" href="/#wishlist">WISHLIST</a>
               <a className="mdl-navigation__link" href="">ACCOUNT</a>
             </nav>
           </div>
@@ -38,9 +38,9 @@ var App = React.createClass({
         <div className="mdl-layout__drawer">
           <span className="mdl-layout-title"><img src={require('./../images/logo-2.png')} /></span>
           <nav className="mdl-navigation">
-             <a className="mdl-navigation__link" href="/how-it-works">HOW IT WORKS</a>
+             <a className="mdl-navigation__link" href="/#how-it-works">HOW IT WORKS</a>
             <a className="mdl-navigation__link" href="">GIFT A WISH</a>
-            <a className="mdl-navigation__link" href="">WISHLIST</a>
+            <a className="mdl-navigation__link" href="/#wishlist">WISHLIST</a>
             <a className="mdl-navigation__link" href="">ACCOUNT</a>
           </nav>
         </div>
