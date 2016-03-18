@@ -23,7 +23,7 @@ var App = React.createClass({
         <header className="mdl-layout__header mdl-layout__header--transparent">
           <div className="mdl-layout__header-row">
            
-            <span className="mdl-layout-title"><img src={require('./../images/logo.png')} /></span>
+            <span className="mdl-layout-title"><a href="/"><img src={require('./../images/logo.png')} /></a></span>
           
             <div className="mdl-layout-spacer"></div>
             
@@ -31,20 +31,20 @@ var App = React.createClass({
               <a className="mdl-navigation__link" href="/#how-it-works">HOW IT WORKS</a>
               <a className="mdl-navigation__link" href="">GIFT A WISH</a>
               <a className="mdl-navigation__link" href="/#wishlist">WISHLIST</a>
-              <a className="mdl-navigation__link" href="">ACCOUNT</a>
+              <a className="mdl-navigation__link" href="/#login">ACCOUNT</a>
             </nav>
           </div>
         </header>
         <div className="mdl-layout__drawer">
-          <span className="mdl-layout-title"><img src={require('./../images/logo-2.png')} /></span>
+          <span className="mdl-layout-title"><img src={require('./../images/logo-black.png')} /></span>
           <nav className="mdl-navigation">
              <a className="mdl-navigation__link" href="/#how-it-works">HOW IT WORKS</a>
             <a className="mdl-navigation__link" href="">GIFT A WISH</a>
             <a className="mdl-navigation__link" href="/#wishlist">WISHLIST</a>
-            <a className="mdl-navigation__link" href="">ACCOUNT</a>
+            <a className="mdl-navigation__link" href="/#login">ACCOUNT</a>
           </nav>
         </div>
-        <main className="mdl-layout__content">
+        <main className="mdl-grid fixed-width">
         </main>
       </div>
     );
