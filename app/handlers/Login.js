@@ -10,28 +10,27 @@ const styles = {
     top: '50px'
   },
   loginform: {
-    width: '200px',
-    margin: '100px 40px'
+    width: '200px'
   },
 };
 const Login = () => (
-  <div>
-    <form method="post" action="/" style={styles.loginform}>
-      <TextField
-        hintText="Username or email"
-        floatingLabelText="Username or email"
-        name="username"
-      /><br/>
-      <br/>
-      <TextField
-        hintText="Password "
-        floatingLabelText="Password"
-        type="password"
-        name="password"
-      /><br/>
-       <RaisedButton label="Login" secondary={true} className="mdl-js-ripple-effect"/>
-    </form>
-  </div>
+  
+  <form method="post" action="/" style={styles.loginform}>
+    <TextField
+      hintText="Username or email"
+      floatingLabelText="Username or email"
+      name="username"
+    />
+    
+    <TextField
+      hintText="Password "
+      floatingLabelText="Password"
+      type="password"
+      name="password"
+    />
+    
+    <RaisedButton label="Login" secondary={true} className="mdl-js-ripple-effect"/>
+   </form>
 );
 
 export default Login;
